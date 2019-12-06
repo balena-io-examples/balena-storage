@@ -1,11 +1,11 @@
-FROM balenalib/%%BALENA_MACHINE_NAME%%-alpine-node
+FROM balenalib/%%BALENA_MACHINE_NAME%%-alpine
 
 # Enable udev for detection of dynamically plugged devices
 ENV UDEV=on
 COPY udev/usb.rules /etc/udev/rules.d/usb.rules
 
 # Install dependencies
-RUN install_packages findmnt
+RUN install_packages findmnt util-linux
 
 WORKDIR /usr/src
 COPY scripts scripts

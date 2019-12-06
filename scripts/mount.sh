@@ -22,6 +22,7 @@ if [[ $ID_FS_TYPE != 'vfat' && $ID_FS_TYPE != 'ext4' ]]; then
 	echo "File system not supported: $ID_FS_TYPE" >> /usr/src/mount.log
 	exit 1
 fi
+
 # Mount device
 if findmnt -rno SOURCE,TARGET $DEVNAME >/dev/null; then
     echo "Device $DEVNAME is already mounted!" >> /usr/src/mount.log
