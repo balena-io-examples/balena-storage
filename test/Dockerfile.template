@@ -1,8 +1,0 @@
-FROM balenalib/%%BALENA_MACHINE_NAME%%-alpine
-
-
-WORKDIR /usr/src
-COPY . .
-RUN chmod +x idle.sh
-
-CMD [ "/bin/bash", "/usr/src/idle.sh" ]
