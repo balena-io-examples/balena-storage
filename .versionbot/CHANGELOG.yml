@@ -1,4 +1,21 @@
 - commits:
+    - subject: "mount.sh: add sync option to avoid data loss"
+      hash: 4033f60bda92779d3f2fe23fd8270c715dd4cffc
+      body: |
+        The unmounting of the disk happens after it has been removed. Mounting
+        with synchronous writes avoid data loss on filesystems that support it
+        like ext4.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 0.1.3
+  title: ""
+  date: 2023-10-02T09:15:15.339Z
+- commits:
     - subject: Add flowzone configuration
       hash: 660e8022285b274415d1adb95cfdc21a997568a5
       body: |
