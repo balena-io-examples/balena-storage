@@ -1,0 +1,46 @@
+- commits:
+    - subject: Add flowzone configuration
+      hash: 660e8022285b274415d1adb95cfdc21a997568a5
+      body: |
+        This enables the CI/CD workflows.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 0.1.2
+  title: ""
+  date: 2023-10-02T09:07:46.255Z
+- version: 0.1.1
+  date: 2021-07-01T10:56:19Z
+  commits:
+    - hash: 79430a597992ba85713e9c498a8dd43cd6d96fe1
+      author: Vipul Gupta
+      subject: "patch: Delete Codeowners"
+      body: ""
+- version: 0.1.0
+  date: 2019-12-11T18:07:25Z
+  commits:
+    - hash: abe4448db0e1f25151d94e00d8a11743a275f288
+      author: Tomás Migone
+      footers:
+        change-type: minor
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      subject: "usb-storage: Add mount and unmount scripts, udev rules and dockerfile."
+      body: ""
+    - hash: 82ed60f9f64d05e4acee7f3b024def2b71d225de
+      author: Tomás Migone
+      footers:
+        change-type: minor
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      subject: Add test container.
+      body: ""
+    - hash: 0d936da916f1072d4462451a7b7a9142494b742b
+      author: Tomás Migone
+      footers:
+        change-type: minor
+        signed-off-by: Tomás Migone <tomas@balena.io>
+      subject: Reworked project scope to focus on current balenaEngine capabilities.
+      body: ""
