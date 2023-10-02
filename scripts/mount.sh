@@ -40,5 +40,5 @@ if findmnt -rno SOURCE,TARGET $DEVNAME >/dev/null; then
 else
     echo "Mounting - Source: $DEVNAME - Destination: $MOUNT_POINT" >> /usr/src/mount.log
     mkdir -p $MOUNT_POINT
-    mount -t $ID_FS_TYPE -o rw $DEVNAME $MOUNT_POINT
+    mount -t $ID_FS_TYPE -o rw,sync $DEVNAME $MOUNT_POINT
 fi
